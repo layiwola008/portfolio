@@ -1,0 +1,396 @@
+/*
+MY COLOR SCHEME
+	green #1D9088
+	grey
+	white or #ffffff
+*/
+
+
+
+html {
+  scroll-behavior: smooth; /*when you click a butto to scroll with id
+  eg: #aboutContainer, the scrolling will be smooth with this css*/
+}
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Abel', sans-serif;
+	background-color: #1D9088;
+	
+}
+
+
+
+
+
+.logo {
+	width: 40%;
+	position: relative;
+	top: -30px;
+}
+
+/*I am using ul - unorderred list for my main menu*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #fff;
+ 
+}
+
+li {
+  float: right;
+  position: relative;
+	top: 30px;
+ 
+}
+
+li a {
+  display: block;
+  color: #333;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  margin-right: 3px;
+}
+
+
+li a:hover {
+  
+}
+
+li a:hover:not(.active) {
+  background-color: #1D9088;
+}
+
+.active {
+  background-color: ;
+}
+nav {
+	padding: 5px 0 5px 0;
+	top: -5px;
+	
+}
+
+/*The sizes of my header tags*/
+h1 {
+	font-size: 50px;
+}
+h2 {
+	font-size: 28px;
+}
+h3 {
+
+	font-size: 35px;
+}
+
+/*style for the background image on site welcome*/
+#breadcrumb {
+	background-image: url("images/headerbg.jpg");
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 563px;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+
+}
+.whoIam {
+	margin-top: 10%;
+}
+.myName {
+	font-weight: bold;
+	font-family: 'Petrona', serif;
+	color: #1D9088;
+}
+.greetings {
+	font-size: 35px;
+}
+
+/*here is the style for my about me container
+this is also mu intro section
+Who I am
+Where I am located
+*/
+#aboutContainer {
+	display: flex;
+	flex-direction: row;
+	width: 70%;
+	height: 100%;
+	background-color: white;
+	padding: 15px 35px 10px 5px;
+	position: relative;
+	top: -86px;
+	margin: 0 auto;
+	border-radius: 6px;
+	box-shadow: 5px 10px 18px #fff; /*This creates background shadow for about me section*/
+}
+#aboutContainer:hover {
+	background-color: #1D9088;
+	color: white;
+}
+.aboutMe {
+	margin-left: 70px;
+	font-size: 22px;
+}
+.me {
+	color: #1D9088;
+}
+#myPic img{
+	
+	margin: 30px 15px;
+}
+.firstTitle {
+	font-size: 24px;
+}
+.aboutMe img {
+  width: 6%;
+  margin-right: 3px;
+}
+#servicesContainer {
+	text-align: center;
+	width: 100%;
+	position: relative;
+}
+.service {
+	width: 28%;
+	color: white;
+	height: 290px;
+	background-color: grey;
+	margin: 0 auto;
+	padding: 50px 16px;
+	font-size: 22px;
+	box-shadow: 5px 10px 18px #fff;/*this gives my services boxes background shadow*/
+	transition: transform .2s;
+	border-radius: 11px;
+	border-left: 2px solid white;
+}
+.service:hover {
+	/* this css zoomz in my service boxes */
+	-ms-transform: scale(1.2);
+	-webkit-transform: scale(1.2); 
+	transform: scale(1.2); 
+}
+.allServices {
+	display: flex;
+	flex-direction: row;
+}
+.zoom {
+  padding: 50px;
+  background-color: green;
+  transition: transform .2s;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+}
+
+#work {
+	margin-top: 60px;
+	text-align: center;
+	position: relative;
+	display: flex;
+	width: 90%;
+	margin: 0 auto;
+}
+#portfolioContainer {
+	background-color: white;
+	text-align: center;
+	width: 100%;
+	position: relative;
+	padding: 15px 0 10px 0;
+	margin: 35px 0 10px 0;
+}
+.portfolio {
+	margin: 9px 10px;
+	background-color: grey;
+}
+.portfolio img {
+	width: 95%;
+	margin: 9px 10px;
+}
+
+
+/*The following css will flip my portfolio works on hover
+.flip-box 
+down to 
+.flip-box-back
+*/
+.flip-box {
+  background-color: transparent;
+  text-align: center;
+  width: 31%;
+  height: 300px;
+  border: 5px solid #f1f1f1;
+  perspective: 1000px;
+  margin: 0 auto;
+ 
+  
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateX(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 94%;
+  height: 96%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+   padding: 5px 10px;
+  color: black;
+}
+.flip-box-front img {
+	width: 90%;
+	border-radius: 12px;
+	margin: 0 auto;
+}
+
+.flip-box-back {
+  background-color: #1D9088;
+  border-radius: 12px;
+  color: white;
+  font-size: 18px;
+  padding: 5px 10px;
+  transform: rotateX(180deg);
+}
+/*this creates the border radius for button on portfolio box hover */
+.button {
+	padding: 9px;
+	width: 40%;
+	font-size: 16px;
+	border-radius: 15px;
+	border: none;
+	
+}
+#footerContainer{
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	color: white;
+	 background-image: linear-gradient(to left, #1D9088 , black);
+}
+.footer {
+	width: 23%;
+	font-size: 19px;
+	margin: 0 auto;
+	padding: 3% 2% 1% 6%;;
+}
+.footer a {
+	color: #ffffff;
+	text-decoration: none;
+}
+.footer img {
+	color: white;
+	width: 20%;
+	position: relative;
+	float: left;
+}
+.backToTop {
+	float: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*Here is my media query for mobile view */
+
+@media only screen and (max-width: 800px) {
+  body {
+  
+  }
+  
+ #aboutContainer {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	padding-left: 38px;
+}
+
+h1 {
+	font-size: 45px;
+}
+#myPic img{
+	
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.aboutMe {
+	width: 100%;
+	margin: 0 auto;
+}
+.aboutMe img {
+  width: 16%;
+}
+.service {
+	width: 80%;
+	height: 300px;
+	background-color: grey;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+.allServices {
+	display: flex;
+	flex-direction: column;
+}
+
+#work {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+}
+.flip-box {
+  background-color: transparent;
+  width: 90%;
+  height: 300px;
+  margin: 0 auto;
+  margin-bottom: 23px;
+ 
+  
+}
+.flip-box-front img {
+	width: 90%;
+	mrgin: 0 auto;
+}
+#footerContainer{
+	display: flex;
+	flex-direction: column;
+}
+.footer {
+	width: 90%;
+}
+  
+  
+}
